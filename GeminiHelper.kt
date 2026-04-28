@@ -8,7 +8,7 @@ import java.io.IOException
 
 object GeminiHelper {
 
-    private const val GEMINI_API_KEY = "AIzaSyA0yRHk4kiOav-PM4uPyIsCm81fOFyk4HU"
+    private const val GEMINI_API_KEY = " "
 
     fun generatePoll(topic: String, callback: (String?) -> Unit) {
 
