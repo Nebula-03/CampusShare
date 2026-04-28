@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#F3E5D3"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TITLE -->
+        <TextView
+            android:text="Create Poll"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#4E342E"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- QUESTIONS CARD -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="16dp"
+            android:elevation="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Questions"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#4E342E"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/questionContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addQuestionBtn"
+                android:text="+ Add Question"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="#5D4037"  />
+
+        </LinearLayout>
+
+        <!-- IMAGE CARD -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="16dp"
+            android:elevation="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Poll Cover Image (Optional)"
+                android:textStyle="bold"
+                android:textColor="#4E342E"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/pollImage"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#EFE2CF"
+                android:scaleType="centerCrop"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/uploadImageBtn"
+                android:text="Upload Image"
+                android:textAllCaps="false"
+                android:backgroundTint="#5D4037"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"/>
+
+        </LinearLayout>
+
+        <!-- EXPIRY CARD -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="16dp"
+            android:elevation="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Expiry Time"
+                android:textStyle="bold"
+                android:textColor="#4E342E"
+                android:layout_marginBottom="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/expiryTime"
+                android:hint="Enter hours (e.g. 24)"
+                android:textColorHint="#5D4037"
+                android:textColor="#5D4037"
+                android:background="@drawable/edit_bg"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- ACTION BUTTONS -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/createBtn"
+            android:text="Create Poll"
+            android:textAllCaps="false"
+            android:backgroundTint="#5D4037"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/aiBtn"
+            android:text="✨ Generate with AI"
+            android:textAllCaps="false"
+            android:backgroundTint="#5D4037"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/edit_bg"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Option Input -->
+    <EditText
+        android:id="@+id/optionText"
+        android:hint="Option"
+        android:textColorHint="#5D4037"
+        android:background="@android:color/transparent"
+        android:layout_weight="1"
+        android:textColor="#5D4037"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <!-- Camera -->
+    <ImageView
+        android:id="@+id/addImage"
+        android:src="@android:drawable/ic_menu_camera"
+        android:layout_marginStart="8dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp" />
+
+    <!-- Remove -->
+    <ImageView
+        android:id="@+id/removeOption"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:layout_marginStart="8dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp" />
+
+</LinearLayout>

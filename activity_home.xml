@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F5E6D3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 🔝 Top Bar -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="#6D4C41"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:text="Quick Poll"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/profileBtn"
+            android:src="@drawable/outline_account_circle_24"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:tint="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- 📦 Grid -->
+    <GridLayout
+        android:id="@+id/grid"
+        android:columnCount="2"
+        android:padding="16dp"
+        android:layout_below="@id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/enterPollCard">
+
+        <!-- Card 1 -->
+        <LinearLayout
+            android:id="@+id/myPollsCard"
+            style="@style/CardStyle">
+
+            <ImageView
+                android:src="@drawable/outline_article_24"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:tint="#6D4C41" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                style="@style/CardText"
+                android:layout_marginTop="10dp"
+                android:text="My Polls"/>
+        </LinearLayout>
+
+        <!-- Card 2 -->
+        <LinearLayout
+            android:id="@+id/createCard"
+            style="@style/CardStyle">
+
+            <ImageView
+                android:src="@drawable/outline_add_chart_24"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:tint="#6D4C41" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                style="@style/CardText"
+                android:text="Create Poll"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <!-- Card 3 -->
+        <LinearLayout
+            android:id="@+id/draftCard"
+            style="@style/CardStyle">
+
+            <ImageView
+                android:src="@drawable/outline_data_table_24"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:tint="#6D4C41" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                style="@style/CardText"
+                android:text="Drafts"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <!-- Card 4 -->
+        <LinearLayout
+            android:id="@+id/resultCard"
+            style="@style/CardStyle">
+
+            <ImageView
+                android:src="@drawable/outline_check_circle_24"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:tint="#6D4C41" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                style="@style/CardText"
+                android:text="Results"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+    </GridLayout>
+
+    <!-- 🔽 ENTER POLL BUTTON (BOTTOM CENTER) -->
+    <LinearLayout
+        android:id="@+id/enterPollCard"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/card_bg"
+        android:elevation="8dp"
+        android:padding="12dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:text="Vote"
+            android:textColor="#4E342E"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

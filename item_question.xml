@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/card_bg_inner"
+    android:padding="14dp"
+    android:layout_marginBottom="14dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Question Title -->
+    <TextView
+        android:id="@+id/questionTitle"
+        android:text="Question 1"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#4E342E"
+        android:layout_marginBottom="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Question Input -->
+    <EditText
+        android:id="@+id/question"
+        android:hint="Enter your question"
+        android:textColorHint="#5D4037"
+        android:background="@drawable/edit_bg"
+        android:padding="12dp"
+        android:textColor="#5D4037"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Options -->
+    <LinearLayout
+        android:id="@+id/optionsContainer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Add Option -->
+    <TextView
+        android:id="@+id/addOptionBtn"
+        android:text="+ Add Option"
+        android:textStyle="bold"
+        android:textColor="#5D4037"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Remove -->
+    <TextView
+        android:id="@+id/removeQuestionBtn"
+        android:text="Remove Question"
+        android:textStyle="bold"
+        android:textColor="#B23A48"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
